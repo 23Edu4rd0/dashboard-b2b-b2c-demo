@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dashboard-b2b-b2c-demo/imagens/icone-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/dashboard-b2b-b2c-demo/imagens/icone.png">
+  <link rel="apple-touch-icon" href="/dashboard-b2b-b2c-demo/imagens/apple-touch-icon.png">
+
+  <meta property="og:title" content="Painel">
+  <meta property="og:description" content="Projetos B2B, estoque e viabilidade B2C.">
+  <title>Painel</title>
+  <meta name="author" content="@Beto, @Rafinha, @dusoup, @VinnyByn e @23Edu4rd0">
+  <meta name="copyright" content="© 2026. Todos os direitos reservados.">
+  <script type="module" crossorigin src="/dashboard-b2b-b2c-demo/assets/painel-DJGClT4g.js"></script>
+  <link rel="modulepreload" crossorigin href="/dashboard-b2b-b2c-demo/assets/rolldown-runtime-BCiCTKAo.js">
+  <link rel="modulepreload" crossorigin href="/dashboard-b2b-b2c-demo/assets/echarts-ClW2wUd4.js">
+  <link rel="modulepreload" crossorigin href="/dashboard-b2b-b2c-demo/assets/acesso-D23FBKcv.js">
+  <link rel="modulepreload" crossorigin href="/dashboard-b2b-b2c-demo/assets/api-Dp0_GVcd.js">
+  <link rel="modulepreload" crossorigin href="/dashboard-b2b-b2c-demo/assets/preload-helper-B_dqTVhP.js">
+  <link rel="modulepreload" crossorigin href="/dashboard-b2b-b2c-demo/assets/bairros-zohLYNdj.js">
+  <link rel="modulepreload" crossorigin href="/dashboard-b2b-b2c-demo/assets/kmz-DFAtxwBl.js">
+  <link rel="stylesheet" crossorigin href="/dashboard-b2b-b2c-demo/assets/painel-Dck-lh_x.css">
+</head>
+<body>
+
+  <div id="acesso" class="acesso" hidden>
+    <aside class="acesso-marca" aria-hidden="true">
+      <div class="texto-da-marca">
+        <img class="login-brand-logo" data-logo="escura" alt="">
+        <h2>Projetos B2B, estoque e viabilidade B2C num só lugar</h2>
+        <p class="login-live-status"><span class="login-live-dot"></span>Atualizado a cada minuto</p>
+      </div>
+
+      <div class="login-preview" data-login-preview data-active-view="b2b">
+        <div class="login-preview-nav">
+          <span data-preview-tab="b2b">B2B</span>
+          <span data-preview-tab="estoque">Estoque</span>
+          <span data-preview-tab="b2c">B2C</span>
+          <span>Postes</span>
+          <span>SWAP</span>
+        </div>
+
+        <div class="login-preview-main">
+          <section class="login-preview-view" data-preview-view="b2b">
+            <header class="login-preview-header"><strong>Projetos B2B</strong><span>Últimos 12 meses</span></header>
+            <div class="login-preview-stats">
+              <div class="login-preview-stat"><span>Projetos</span><strong class="login-preview-count" style="--count-target: 128"></strong></div>
+              <div class="login-preview-stat"><span>Concluídos</span><strong class="login-preview-count" style="--count-target: 86"></strong></div>
+              <div class="login-preview-stat"><span>Em andamento</span><strong class="login-preview-count" style="--count-target: 37"></strong></div>
+            </div>
+            <div class="login-preview-panel">
+              <span class="login-preview-panel-title">Projetos por mês</span>
+              <div class="login-preview-chart">
+                <svg viewBox="0 0 320 120" preserveAspectRatio="none">
+                  <path class="login-preview-gridline" d="M0 30H320M0 60H320M0 90H320"/>
+                  <path class="login-preview-area" d="M0 92C20 88 30 70 53 74S90 86 107 66S140 40 160 52S195 60 213 38S250 30 267 22S296 26 312 14V120H0Z"/>
+                  <path class="login-preview-line" pathLength="1" d="M0 92C20 88 30 70 53 74S90 86 107 66S140 40 160 52S195 60 213 38S250 30 267 22S296 26 312 14"/>
+                </svg>
+                <span class="login-preview-last-point"></span>
+              </div>
+              <div class="login-preview-months"><span>jan</span><span>mar</span><span>mai</span><span>jul</span><span>set</span><span>nov</span></div>
+            </div>
+          </section>
+
+          <section class="login-preview-view" data-preview-view="estoque">
+            <header class="login-preview-header"><strong>Estoque</strong><span>Por regional</span></header>
+            <div class="login-preview-stats">
+              <div class="login-preview-stat"><span>Críticos</span><strong class="login-preview-count" style="--count-target: 7"></strong></div>
+              <div class="login-preview-stat"><span>Em alerta</span><strong class="login-preview-count" style="--count-target: 12"></strong></div>
+              <div class="login-preview-stat"><span>Normais</span><strong class="login-preview-count" style="--count-target: 41"></strong></div>
+            </div>
+            <div class="login-preview-panel">
+              <span class="login-preview-panel-title">Saldo por item</span>
+              <div class="login-preview-stock">
+                <div class="login-preview-stock-row login-preview-stock-head"><span></span><span>DIV</span><span>LAV</span><span>TAU</span><span>UNA</span><span>MOC</span></div>
+                <div class="login-preview-stock-row"><span>Cabo drop</span><b class="is-normal">840</b><b class="is-alert">210</b><b class="is-normal">615</b><b class="is-critical">40</b><b class="is-normal">530</b></div>
+                <div class="login-preview-stock-row"><span>ONU</span><b class="is-alert">96</b><b class="is-normal">310</b><b class="is-normal">284</b><b class="is-normal">172</b><b class="is-critical">18</b></div>
+                <div class="login-preview-stock-row"><span>Conector SC</span><b class="is-normal">1.250</b><b class="is-normal">980</b><b class="is-critical">120</b><b class="is-alert">340</b><b class="is-normal">1.105</b></div>
+                <div class="login-preview-stock-row"><span>Splitter 1x8</span><b class="is-critical">6</b><b class="is-normal">58</b><b class="is-alert">22</b><b class="is-normal">47</b><b class="is-normal">63</b></div>
+                <div class="login-preview-stock-row"><span>CTO</span><b class="is-normal">74</b><b class="is-alert">19</b><b class="is-normal">66</b><b class="is-normal">51</b><b class="is-alert">23</b></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="login-preview-view" data-preview-view="b2c">
+            <header class="login-preview-header"><strong>Viabilidade B2C</strong><span>Último relatório</span></header>
+            <div class="login-preview-stats">
+              <div class="login-preview-stat"><span>Portas</span><strong>18.432</strong></div>
+              <div class="login-preview-stat"><span>Livres</span><strong>4.916</strong></div>
+              <div class="login-preview-stat"><span>Ocupação</span><strong class="login-preview-count" style="--count-target: 73" data-suffix="%"></strong></div>
+            </div>
+            <div class="login-preview-panel">
+              <span class="login-preview-panel-title">Ocupação por regional</span>
+              <div class="login-preview-ranking">
+                <div class="login-preview-ranking-row is-highest"><span>Montes Claros</span><i style="--occupancy-share: 94%"></i><b>94%</b></div>
+                <div class="login-preview-ranking-row"><span>Divinópolis</span><i style="--occupancy-share: 81%"></i><b>81%</b></div>
+                <div class="login-preview-ranking-row"><span>Taubaté</span><i style="--occupancy-share: 74%"></i><b>74%</b></div>
+                <div class="login-preview-ranking-row"><span>Lavras</span><i style="--occupancy-share: 62%"></i><b>62%</b></div>
+                <div class="login-preview-ranking-row"><span>Unaí</span><i style="--occupancy-share: 48%"></i><b>48%</b></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </aside>
+
+    <main class="acesso-lado-do-formulario">
+      <div class="caixa-de-acesso">
+        <div class="marca-lateral login-form-brand">
+          <img class="logo-clara" data-logo="clara" alt="">
+          <img class="logo-escura" data-logo="escura" alt="">
+        </div>
+        <div id="conteudoDoAcesso"></div>
+      </div>
+      <small class="rodape-do-acesso">© 2026 · acesso restrito à equipe</small>
+    </main>
+  </div>
+
+  <div id="painel" hidden>
+
+    <aside id="barraLateral" class="barra-lateral">
+      <div class="topo-da-lateral">
+        <div class="marca-lateral">
+          <img class="logo-clara" data-logo="clara" alt="">
+          <img class="logo-escura" data-logo="escura" alt="">
+          <img class="logo-icone" data-logo="icone" alt="">
+        </div>
+      </div>
+
+      <button type="button" id="recolherLateral" class="recolher-lateral" aria-expanded="true" aria-label="Recolher menu" title="Recolher menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 7l-5 5 5 5"/></svg>
+      </button>
+
+      <span class="rotulo-da-lateral">Painéis</span>
+      <nav id="abas" class="abas-laterais" aria-label="Telas do painel"></nav>
+
+      <div class="atualizacoes">
+        <span id="atualizacaoB2b">B2B —</span>
+        <span id="atualizacaoViabilidade">Viabilidade —</span>
+      </div>
+    </aside>
+
+    <div class="area-principal">
+      <header id="cabecalho">
+        <h1 id="tituloDaTela">Projetos B2B</h1>
+
+        <div class="barra-de-filtros">
+          <div id="periodo" class="grupo-de-filtros" hidden>
+            <div id="atalhosDePeriodo" class="segmentado segmentado-do-topo" role="group" aria-label="Período">
+              <button type="button" class="opcao-segmentada" data-meses="3" aria-pressed="false">3 meses</button>
+              <button type="button" class="opcao-segmentada" data-meses="6" aria-pressed="false">6 meses</button>
+              <button type="button" class="opcao-segmentada" data-meses="12" aria-pressed="false">12 meses</button>
+              <button type="button" class="opcao-segmentada" data-meses="ano" aria-pressed="false">Este ano</button>
+            </div>
+            <label class="filtro" for="periodoInicio">
+              <span>Período · de</span>
+              <select id="periodoInicio"></select>
+            </label>
+            <label class="filtro" for="periodoFim">
+              <span>Período · até</span>
+              <select id="periodoFim"></select>
+            </label>
+            <button type="button" id="limparPeriodo" class="limpar-filtros" title="Voltar aos últimos 12 meses" hidden>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+                Limpar
+              </button>
+          </div>
+
+          <div id="controlesDaB2c" class="grupo-de-filtros" hidden>
+            <div id="vistaDaB2c" class="segmentado segmentado-do-topo" role="group" aria-label="O que mostrar">
+              <button type="button" class="opcao-segmentada" data-vista="fibra" aria-pressed="true">Fibra</button>
+              <button type="button" class="opcao-segmentada" data-vista="wireless" aria-pressed="false">Wireless</button>
+              <button type="button" class="opcao-segmentada" data-vista="oportunidades" aria-pressed="false">CTOs críticas</button>
+            </div>
+          </div>
+
+          <div id="filtrosDePostes" class="grupo-de-filtros" hidden>
+            <div hidden>
+            <label class="filtro" for="concessionariaDePostes">
+              <span>Concessionária</span>
+              <select id="concessionariaDePostes"></select>
+            </label>
+            <label class="filtro" for="redeDePostes">
+              <span>Tipo de rede</span>
+              <select id="redeDePostes"></select>
+            </label>
+            <label class="filtro" for="cidadeDePostes">
+              <span>Cidade</span>
+              <select id="cidadeDePostes"></select>
+            </label>
+            </div>
+            <label class="filtro filtro-de-busca" for="buscaDePostes">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <input type="search" id="buscaDePostes" placeholder="Buscar cidade" aria-label="Buscar cidade" autocomplete="off">
+            </label>
+            <div id="vistaDePostes" class="segmentado segmentado-do-topo" role="group" aria-label="O que mostrar">
+              <button type="button" class="opcao-segmentada" data-vista="cidades" aria-pressed="true">Cidades</button>
+              <button type="button" class="opcao-segmentada" data-vista="concessionarias" aria-pressed="false">Concessionárias</button>
+            </div>
+            <button type="button" id="limparFiltrosDePostes" class="limpar-filtros" title="Tirar a concessionária, o tipo de rede, a cidade e a busca" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+              Limpar
+            </button>
+          </div>
+
+          <div id="filtrosDoEstoque" class="grupo-de-filtros" hidden>
+            <label class="filtro" for="regionalDoEstoque">
+              <span>Regional</span>
+              <select id="regionalDoEstoque"></select>
+            </label>
+            <div class="filtro filtro-de-nivel">
+              <span id="rotuloDoNivel">Nível</span>
+              <div id="nivelDoEstoque" class="alternadores-de-nivel" role="group" aria-labelledby="rotuloDoNivel">
+                <button type="button" data-nivel="critical" aria-pressed="true" style="--marcador: var(--status-critico)">Críticos</button>
+                <button type="button" data-nivel="alert" aria-pressed="true" style="--marcador: var(--status-atencao)">Em alerta</button>
+                <button type="button" data-nivel="ok" aria-pressed="true" style="--marcador: var(--serie-3)">Normais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acoes-do-topo">
+          <button type="button" id="botaoDeBusca" class="botao-do-topo botao-de-busca" title="Procurar no painel (Ctrl+Alt+K)" aria-label="Procurar no painel" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <span class="rotulo-da-busca">Procurar…</span>
+            <kbd class="atalho-da-busca">Ctrl Alt K</kbd>
+          </button>
+          <button type="button" id="botaoDeTelaCheia" class="botao-do-topo" title="Tela cheia · modo TV (Ctrl+Alt+F)" aria-label="Tela cheia" aria-pressed="false" hidden>
+            <svg class="icone-entrar-tela-cheia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+            <svg class="icone-sair-tela-cheia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>
+          </button>
+          <div class="alertas-do-topo">
+            <button type="button" id="botaoDeAlertas" class="botao-do-topo" aria-haspopup="dialog" aria-expanded="false" aria-controls="painelDeAlertas" title="Alertas" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+              <span class="numero-de-alertas" hidden></span>
+            </button>
+            <div id="painelDeAlertas" class="painel-de-alertas" role="dialog" aria-label="Alertas" hidden></div>
+          </div>
+        </div>
+
+        <span id="seloConvidado" class="selo-convidado" hidden></span>
+
+        <div class="menu-da-conta">
+          <button type="button" id="botaoEnvios" class="botao-online botao-de-envios" hidden>
+            <span class="ponto-online" aria-hidden="true"></span>
+            <span class="texto-dos-envios"></span>
+          </button>
+          <button type="button" id="botaoOnline" class="botao-online" title="Quem está online" aria-label="Quem está online" hidden>
+            <span class="ponto-online" aria-hidden="true"></span>
+            <span id="numeroOnline">0</span>
+            <span class="rotulo-online">online</span>
+          </button>
+          <button type="button" id="botaoDaConta" class="botao-da-conta" aria-haspopup="menu" aria-expanded="false"
+                  aria-controls="menuDaConta" title="Minha conta">
+            <span id="iniciaisDaConta"></span>
+            <span id="pedidosNoAvatar" class="pedidos-no-avatar" hidden></span>
+          </button>
+          <div id="menuDaConta" class="menu-suspenso" role="menu" hidden>
+            <div class="quem-esta-conectado">
+              <strong id="nomeNoMenu"></strong>
+              <span id="emailNoMenu"></span>
+              <span id="papelNoMenu" class="selo-admin" hidden></span>
+            </div>
+            <button type="button" role="menuitem" id="minhaConta">Minha conta</button>
+            <button type="button" role="menuitem" id="verTutorial">Ver tutorial</button>
+            <button type="button" role="menuitem" id="pausarAtualizacoes" class="item-de-pausa" hidden
+                    title="Para de buscar dados, trocar de tela e recarregar sozinho neste navegador, até você retomar">
+              <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="5" width="3.2" height="14" rx="1"/><rect x="13.8" y="5" width="3.2" height="14" rx="1"/></svg>
+              <span>Pausar atualizações</span>
+            </button>
+            <div id="pastaDeModeracao" class="pasta-do-menu" hidden>
+              <button type="button" id="abrirModeracao" class="titulo-da-pasta" aria-expanded="false" aria-controls="itensDeModeracao">
+                <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/></svg>
+                <span class="nome-da-pasta">Moderação</span>
+                <span id="pedidosNaPasta" class="contagem-de-pendentes" hidden></span>
+                <svg class="seta-da-pasta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+              </button>
+              <div id="itensDeModeracao" class="itens-da-pasta" role="group" aria-label="Moderação" hidden>
+                <button type="button" role="menuitem" id="gerenciarAcessos" title="Aprovar pedidos, editar membros e criar links de convidado">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/></svg>
+                  <span>Membros</span> <span id="pedidosNoMenu" class="contagem-de-pendentes" hidden></span>
+                </button>
+                <button type="button" role="menuitem" id="gerarViabilidade" title="Pedir à Geogrid um relatório de viabilidade novo agora">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
+                  <span>Gerar viabilidade agora</span>
+                </button>
+                <button type="button" role="menuitem" id="descobrirBairros" title="Consultar no mapa o bairro das CTOs que vieram sem bairro" hidden>
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>
+                  <span>Descobrir bairros</span>
+                </button>
+                <button type="button" role="menuitem" id="importarTorres" title="Enviar a planilha das torres wireless" hidden>
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 10v11M8 21h8M9 10l3-7 3 7"/><path d="M6.5 6.5a8 8 0 0 0 0 7M17.5 6.5a8 8 0 0 1 0 7"/></svg>
+                  <span>Torres wireless</span>
+                </button>
+                <button type="button" role="menuitem" id="analisesDeRota" title="Enviar um KMZ de rotas e ver os postes perto delas">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19c4 0 4-14 8-14s4 14 8 14"/><circle cx="4" cy="19" r="1.5"/><circle cx="20" cy="19" r="1.5"/></svg>
+                  <span>Análises de rota</span>
+                </button>
+                <button type="button" role="menuitem" id="paginaDeAdmin" title="Setores, membros e configurações de cada setor">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+                  <span>Administração</span>
+                </button>
+              </div>
+            </div>
+            <div id="pastaDeRelatorios" class="pasta-do-menu" hidden>
+              <button type="button" id="abrirRelatorios" class="titulo-da-pasta" aria-expanded="false" aria-controls="itensDeRelatorios">
+                <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg>
+                <span class="nome-da-pasta">Relatórios</span>
+                <svg class="seta-da-pasta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+              </button>
+              <div id="itensDeRelatorios" class="itens-da-pasta" role="group" aria-label="Relatórios" hidden>
+                <button type="button" role="menuitem" id="relatorioDeSwaps" title="Relatório dos SWAPs em PDF ou Excel para compartilhar">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4v13M7 17l-3-3M7 17l3-3M17 20V7M17 7l-3 3M17 7l3 3"/></svg>
+                  <span>SWAPs</span>
+                </button>
+                <button type="button" role="menuitem" id="relatorioDeEstoque" title="Itens críticos, saldo por regional e próximas reposições">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></svg>
+                  <span>Estoque</span>
+                </button>
+                <button type="button" role="menuitem" id="relatorioDeB2b" title="Projetos do período escolhido na tela B2B">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg>
+                  <span>Projetos B2B</span>
+                </button>
+                <button type="button" role="menuitem" id="relatorioDeViabilidade" title="Regionais, cidades, bairros, tecnologias das CTOs, wireless, financeiro e torres">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/><path d="M1.5 9a15 15 0 0 1 21 0"/></svg>
+                  <span>Viabilidade B2C</span>
+                </button>
+                <button type="button" role="menuitem" id="relatorioDeCtosCriticas" title="CTOs com até 2 portas livres por cidade, bairro e uma a uma, com os ajustes">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h4"/></svg>
+                  <span>CTOs críticas</span>
+                </button>
+                <button type="button" role="menuitem" id="relatorioDePostes" title="Postes por cidade, concessionárias, licenciados e tipos de cabo">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 7h10M8.5 11.5h7M9.5 21h5"/></svg>
+                  <span>Postes</span>
+                </button>
+                <button type="button" role="menuitem" id="copiaDeSwaps" title="Cópias diárias do banco de SWAPs, para baixar">
+                  <svg class="icone-do-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg>
+                  <span>Cópia de segurança dos SWAPs</span>
+                </button>
+              </div>
+            </div>
+            <button type="button" role="menuitem" id="sairDoPainel" class="sair">Sair</button>
+          </div>
+        </div>
+      </header>
+
+    <section class="tela" data-tela="b2b">
+      <div id="indicadoresB2b" class="indicadores"></div>
+
+      <div class="grade-graficos grade-b2b">
+        <article class="cartao area-mes">
+          <h2>Projetos por mês</h2>
+          <div class="area-grafico" id="graficoProjetosPorMes"></div>
+        </article>
+
+        <article class="cartao area-por-status">
+          <h2>Projetos por status</h2>
+          <div class="area-grafico" id="graficoProjetosPorStatus"></div>
+        </article>
+
+        <article class="cartao area-prioridade">
+          <h2 id="tituloPrioridade">Prioridade</h2>
+          <div class="area-grafico" id="graficoPrioridade"></div>
+        </article>
+
+        <article class="cartao area-equipe">
+          <h2>Status por equipe</h2>
+          <div class="area-grafico" id="graficoStatusPorEquipe"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tela" data-tela="estoque" hidden>
+      <div id="indicadoresEstoque" class="indicadores"></div>
+
+      <div class="grade-graficos grade-estoque">
+        <article class="cartao">
+          <h2>Estoque por regional · mais graves primeiro</h2>
+          <div class="corpo-de-estoque" id="tabelaDeEstoque"></div>
+        </article>
+
+        <article class="cartao">
+          <h2>Por regional</h2>
+          <div class="area-grafico" id="graficoEstoquePorRegional"></div>
+        </article>
+
+        <article class="cartao cartao-de-reposicao clicavel" id="cartaoDeReposicao" title="Ver o calendário completo">
+          <h2>Próximas reposições</h2>
+          <div id="listaDeReposicao"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tela" data-tela="postes" hidden>
+      <div id="indicadoresPostes" class="indicadores"></div>
+
+      <div class="espaco-de-postes">
+        <div class="vista-de-postes vista-de-cidades" data-vista="cidades">
+          <article class="cartao area-cidades">
+            <h2 id="tituloDasCidades">Cidades</h2>
+            <div id="tabelaDeCidades" class="corpo-de-postes corpo-de-postes-rolavel"></div>
+          </article>
+          <article class="cartao painel-da-cidade" id="painelDaCidade"></article>
+        </div>
+
+        <div class="vista-de-postes vista-de-concessionarias" data-vista="concessionarias" hidden>
+          <article class="cartao area-tabela-de-concessionarias">
+            <h2>Concessionárias</h2>
+            <p class="subtitulo-de-postes">Clique numa concessionária para filtrar a tela só por ela.</p>
+            <div id="tabelaDeConcessionarias" class="corpo-de-postes"></div>
+          </article>
+          <article class="cartao area-grafico-de-concessionarias">
+            <h2>Pago hoje (por mes) × se todos fossem licenciados (por mes)</h2>
+            <div class="area-grafico" id="graficoConcessionarias"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tela tela-swap" data-tela="swap" hidden>
+      <div id="telaSwap" class="swap"></div>
+    </section>
+
+    <section class="tela" data-tela="torres" hidden>
+      <div id="telaDeTorres"></div>
+    </section>
+
+    <section class="tela" data-tela="b2c" hidden>
+      <div id="indicadoresB2c" class="indicadores"></div>
+      <div id="telaDeOportunidades" hidden></div>
+
+      <div class="grade-graficos grade-b2c">
+        <article class="cartao cartao-alto">
+          <h2>Detalhamento por cidade <button type="button" id="filtroDaB2c" class="filtro-da-b2c" hidden></button></h2>
+          <div class="area-tabela" id="tabelaDeOcupacaoPorCidade"></div>
+        </article>
+
+        <article class="cartao">
+          <h2>Regionais</h2>
+          <div class="area-tabela" id="tabelaDeOcupacaoRegional"></div>
+        </article>
+
+        <article class="cartao">
+          <h2 id="tituloDoGraficoDeCidades">Cidades com mais portas</h2>
+          <div class="area-grafico" id="graficoCidades"></div>
+        </article>
+
+      </div>
+    </section>
+    </div>
+  </div>
+
+  <div id="detalhes" hidden></div>
+
+</body>
+</html>
